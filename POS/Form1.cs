@@ -37,10 +37,10 @@ namespace POS
             tax = 3.9;
             if (dataGridView1.Rows.Count > 0)
             {
-                lblTax.Text = String.Format("PHP", (((Cost_of_Items() * tax) / 100)));
-                lblSubTotal.Text = String.Format("PHP", (Cost_of_Items()));
+                lblTax.Text = String.Format("₱", (((Cost_of_Items() * tax) / 100)));
+                lblSubTotal.Text = String.Format("₱", (Cost_of_Items()));
                 q = ((Cost_of_Items() * tax) / 100);
-                lblTotal.Text = String.Format("PHP", (Cost_of_Items() + q));
+                lblTotal.Text = String.Format("₱", (Cost_of_Items() + q));
                 lblBarCode.Text = Convert.ToString(q + Cost_of_Items());
             }
 
@@ -54,7 +54,7 @@ namespace POS
             {
                 q = ((Cost_of_Items() * tax) / 100) + Cost_of_Items();
                 c = Convert.ToInt32(lblCash.Text);
-                lblChange.Text = String.Format("PHP", c - q);
+                lblChange.Text = String.Format("₱", c - q);
             }
         }  
 
@@ -225,6 +225,198 @@ namespace POS
             {
                     dataGridView1.Rows.Remove(row);
             }
+            AddCost();
+        }
+
+        private void Pesto_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 149;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Pesto"))
+                         {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+                    
+                }
+            }
+            dataGridView1.Rows.Add("Pesto", "1", CostofItem);
+            AddCost();
+        }
+
+        private void Spaghetti_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 149;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Spaghetti"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Spaghetti", "1", CostofItem);
+            AddCost();
+        }
+
+        private void Carbonara_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 149;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Carbonara"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Carbonara", "1", CostofItem);
+            AddCost();
+        }
+
+        private void Lasagna_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 100;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Lasagna"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Lasagna", "1", CostofItem);
+            AddCost();
+        }
+
+        private void ClassicPizza_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 199;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Classic Pizza"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Classic Pizza", "1", CostofItem);
+            AddCost();
+        }
+
+        private void Pepperoni_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 249;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Pepperoni"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Pepperoni", "1", CostofItem);
+            AddCost();
+        }
+
+        private void Spinach_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 249;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Spinach Pizza"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Spinach Pizza", "1", CostofItem);
+            AddCost();
+        }
+
+        private void ShrimpPizza_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 249;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Shrimp Pizza"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Shrimp Pizza", "1", CostofItem);
+            AddCost();
+        }
+
+        private void Sprite_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 49;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Sprite"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Sprite", "1", CostofItem);
+            AddCost();
+        }
+
+        private void IcedTea_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 49;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Iced Tea"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Iced Tea", "1", CostofItem);
+            AddCost();
+        }
+
+        private void Coke_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 49;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Coke"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Coke", "1", CostofItem);
+            AddCost();
+        }
+
+        private void Water_Click(object sender, EventArgs e)
+        {
+            Double CostofItem = 20;
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                if ((bool)(row.Cells[0].Value = "Water"))
+                {
+                    row.Cells[1].Value = Double.Parse((string)row.Cells[1].Value + 1);
+                    row.Cells[2].Value = Double.Parse((string)row.Cells[1].Value) * CostofItem;
+
+                }
+            }
+            dataGridView1.Rows.Add("Water", "1", CostofItem);
             AddCost();
         }
     }

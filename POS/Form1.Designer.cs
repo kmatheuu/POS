@@ -43,22 +43,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
+            this.Coke = new System.Windows.Forms.Button();
+            this.Lasagna = new System.Windows.Forms.Button();
+            this.IcedTea = new System.Windows.Forms.Button();
+            this.Sprite = new System.Windows.Forms.Button();
+            this.Spinach = new System.Windows.Forms.Button();
+            this.Pepperoni = new System.Windows.Forms.Button();
+            this.ClassicPizza = new System.Windows.Forms.Button();
+            this.Carbonara = new System.Windows.Forms.Button();
+            this.Spaghetti = new System.Windows.Forms.Button();
+            this.Pesto = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.Remove = new System.Windows.Forms.Button();
@@ -66,6 +60,7 @@
             this.Print = new System.Windows.Forms.Button();
             this.Pay = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.cboPayment = new System.Windows.Forms.ComboBox();
             this.lblCash = new System.Windows.Forms.Label();
             this.lblChange = new System.Windows.Forms.Label();
             this.Cost = new System.Windows.Forms.Label();
@@ -85,7 +80,8 @@
             this.lblBarCode = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.cboPayment = new System.Windows.Forms.ComboBox();
+            this.Water = new System.Windows.Forms.Button();
+            this.ShrimpPizza = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -251,170 +247,165 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.button25);
-            this.panel2.Controls.Add(this.button26);
-            this.panel2.Controls.Add(this.button27);
-            this.panel2.Controls.Add(this.button28);
-            this.panel2.Controls.Add(this.button13);
-            this.panel2.Controls.Add(this.button14);
-            this.panel2.Controls.Add(this.button15);
-            this.panel2.Controls.Add(this.button16);
-            this.panel2.Controls.Add(this.button17);
-            this.panel2.Controls.Add(this.button18);
-            this.panel2.Controls.Add(this.button19);
-            this.panel2.Controls.Add(this.button20);
-            this.panel2.Controls.Add(this.button21);
-            this.panel2.Controls.Add(this.button22);
-            this.panel2.Controls.Add(this.button23);
-            this.panel2.Controls.Add(this.button24);
+            this.panel2.Controls.Add(this.ShrimpPizza);
+            this.panel2.Controls.Add(this.Water);
+            this.panel2.Controls.Add(this.Coke);
+            this.panel2.Controls.Add(this.Lasagna);
+            this.panel2.Controls.Add(this.IcedTea);
+            this.panel2.Controls.Add(this.Sprite);
+            this.panel2.Controls.Add(this.Spinach);
+            this.panel2.Controls.Add(this.Pepperoni);
+            this.panel2.Controls.Add(this.ClassicPizza);
+            this.panel2.Controls.Add(this.Carbonara);
+            this.panel2.Controls.Add(this.Spaghetti);
+            this.panel2.Controls.Add(this.Pesto);
             this.panel2.Location = new System.Drawing.Point(825, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(531, 478);
             this.panel2.TabIndex = 1;
             // 
-            // button25
+            // Coke
             // 
-            this.button25.Location = new System.Drawing.Point(401, 345);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(100, 100);
-            this.button25.TabIndex = 27;
-            this.button25.Text = "button25";
-            this.button25.UseVisualStyleBackColor = true;
+            this.Coke.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Coke.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Coke.Image = ((System.Drawing.Image)(resources.GetObject("Coke.Image")));
+            this.Coke.Location = new System.Drawing.Point(263, 311);
+            this.Coke.Name = "Coke";
+            this.Coke.Size = new System.Drawing.Size(118, 134);
+            this.Coke.TabIndex = 25;
+            this.Coke.Text = "Coke";
+            this.Coke.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Coke.UseVisualStyleBackColor = true;
+            this.Coke.Click += new System.EventHandler(this.Coke_Click);
             // 
-            // button26
+            // Lasagna
             // 
-            this.button26.Location = new System.Drawing.Point(401, 239);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(100, 100);
-            this.button26.TabIndex = 26;
-            this.button26.Text = "button26";
-            this.button26.UseVisualStyleBackColor = true;
+            this.Lasagna.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Lasagna.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lasagna.Image = ((System.Drawing.Image)(resources.GetObject("Lasagna.Image")));
+            this.Lasagna.Location = new System.Drawing.Point(383, 17);
+            this.Lasagna.Name = "Lasagna";
+            this.Lasagna.Size = new System.Drawing.Size(118, 134);
+            this.Lasagna.TabIndex = 24;
+            this.Lasagna.Text = "Lasagna";
+            this.Lasagna.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Lasagna.UseVisualStyleBackColor = true;
+            this.Lasagna.Click += new System.EventHandler(this.Lasagna_Click);
             // 
-            // button27
+            // IcedTea
             // 
-            this.button27.Location = new System.Drawing.Point(401, 133);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(100, 100);
-            this.button27.TabIndex = 25;
-            this.button27.Text = "button27";
-            this.button27.UseVisualStyleBackColor = true;
+            this.IcedTea.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.IcedTea.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IcedTea.Image = ((System.Drawing.Image)(resources.GetObject("IcedTea.Image")));
+            this.IcedTea.Location = new System.Drawing.Point(139, 311);
+            this.IcedTea.Name = "IcedTea";
+            this.IcedTea.Size = new System.Drawing.Size(118, 134);
+            this.IcedTea.TabIndex = 19;
+            this.IcedTea.Text = "Iced Tea";
+            this.IcedTea.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.IcedTea.UseVisualStyleBackColor = true;
+            this.IcedTea.Click += new System.EventHandler(this.IcedTea_Click);
             // 
-            // button28
+            // Sprite
             // 
-            this.button28.Location = new System.Drawing.Point(401, 29);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(100, 100);
-            this.button28.TabIndex = 24;
-            this.button28.Text = "button28";
-            this.button28.UseVisualStyleBackColor = true;
+            this.Sprite.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Sprite.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sprite.Image = ((System.Drawing.Image)(resources.GetObject("Sprite.Image")));
+            this.Sprite.Location = new System.Drawing.Point(15, 311);
+            this.Sprite.Name = "Sprite";
+            this.Sprite.Size = new System.Drawing.Size(118, 134);
+            this.Sprite.TabIndex = 18;
+            this.Sprite.Text = "Sprite";
+            this.Sprite.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Sprite.UseVisualStyleBackColor = true;
+            this.Sprite.Click += new System.EventHandler(this.Sprite_Click);
             // 
-            // button13
+            // Spinach
             // 
-            this.button13.Location = new System.Drawing.Point(295, 345);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(100, 100);
-            this.button13.TabIndex = 23;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
+            this.Spinach.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Spinach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Spinach.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Spinach.Image = ((System.Drawing.Image)(resources.GetObject("Spinach.Image")));
+            this.Spinach.Location = new System.Drawing.Point(263, 165);
+            this.Spinach.Name = "Spinach";
+            this.Spinach.Size = new System.Drawing.Size(118, 134);
+            this.Spinach.TabIndex = 17;
+            this.Spinach.Text = "Spinach";
+            this.Spinach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Spinach.UseVisualStyleBackColor = true;
+            this.Spinach.Click += new System.EventHandler(this.Spinach_Click);
             // 
-            // button14
+            // Pepperoni
             // 
-            this.button14.Location = new System.Drawing.Point(130, 345);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(100, 100);
-            this.button14.TabIndex = 22;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
+            this.Pepperoni.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Pepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pepperoni.Image = ((System.Drawing.Image)(resources.GetObject("Pepperoni.Image")));
+            this.Pepperoni.Location = new System.Drawing.Point(139, 165);
+            this.Pepperoni.Name = "Pepperoni";
+            this.Pepperoni.Size = new System.Drawing.Size(118, 134);
+            this.Pepperoni.TabIndex = 16;
+            this.Pepperoni.Text = "Pepperoni";
+            this.Pepperoni.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Pepperoni.UseVisualStyleBackColor = true;
+            this.Pepperoni.Click += new System.EventHandler(this.Pepperoni_Click);
             // 
-            // button15
+            // ClassicPizza
             // 
-            this.button15.Location = new System.Drawing.Point(24, 345);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(100, 100);
-            this.button15.TabIndex = 21;
-            this.button15.Text = "button15";
-            this.button15.UseVisualStyleBackColor = true;
+            this.ClassicPizza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ClassicPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClassicPizza.Image = ((System.Drawing.Image)(resources.GetObject("ClassicPizza.Image")));
+            this.ClassicPizza.Location = new System.Drawing.Point(15, 165);
+            this.ClassicPizza.Name = "ClassicPizza";
+            this.ClassicPizza.Size = new System.Drawing.Size(118, 134);
+            this.ClassicPizza.TabIndex = 15;
+            this.ClassicPizza.Text = "Classic Pizza";
+            this.ClassicPizza.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ClassicPizza.UseVisualStyleBackColor = true;
+            this.ClassicPizza.Click += new System.EventHandler(this.ClassicPizza_Click);
             // 
-            // button16
+            // Carbonara
             // 
-            this.button16.Location = new System.Drawing.Point(295, 239);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(100, 100);
-            this.button16.TabIndex = 20;
-            this.button16.Text = "button16";
-            this.button16.UseVisualStyleBackColor = true;
+            this.Carbonara.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Carbonara.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Carbonara.Image = ((System.Drawing.Image)(resources.GetObject("Carbonara.Image")));
+            this.Carbonara.Location = new System.Drawing.Point(263, 17);
+            this.Carbonara.Name = "Carbonara";
+            this.Carbonara.Size = new System.Drawing.Size(118, 134);
+            this.Carbonara.TabIndex = 14;
+            this.Carbonara.Text = "Carbonara";
+            this.Carbonara.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Carbonara.UseVisualStyleBackColor = true;
+            this.Carbonara.Click += new System.EventHandler(this.Carbonara_Click);
             // 
-            // button17
+            // Spaghetti
             // 
-            this.button17.Location = new System.Drawing.Point(130, 239);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(100, 100);
-            this.button17.TabIndex = 19;
-            this.button17.Text = "button17";
-            this.button17.UseVisualStyleBackColor = true;
+            this.Spaghetti.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Spaghetti.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Spaghetti.Image = ((System.Drawing.Image)(resources.GetObject("Spaghetti.Image")));
+            this.Spaghetti.Location = new System.Drawing.Point(139, 17);
+            this.Spaghetti.Name = "Spaghetti";
+            this.Spaghetti.Size = new System.Drawing.Size(118, 134);
+            this.Spaghetti.TabIndex = 13;
+            this.Spaghetti.Text = "Spaghetti";
+            this.Spaghetti.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Spaghetti.UseVisualStyleBackColor = true;
+            this.Spaghetti.Click += new System.EventHandler(this.Spaghetti_Click);
             // 
-            // button18
+            // Pesto
             // 
-            this.button18.Location = new System.Drawing.Point(24, 239);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(100, 100);
-            this.button18.TabIndex = 18;
-            this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.Location = new System.Drawing.Point(295, 133);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(100, 100);
-            this.button19.TabIndex = 17;
-            this.button19.Text = "button19";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(130, 133);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(100, 100);
-            this.button20.TabIndex = 16;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.Location = new System.Drawing.Point(24, 133);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(100, 100);
-            this.button21.TabIndex = 15;
-            this.button21.Text = "button21";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            this.button22.Location = new System.Drawing.Point(295, 29);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(100, 100);
-            this.button22.TabIndex = 14;
-            this.button22.Text = "button22";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(130, 29);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(100, 100);
-            this.button23.TabIndex = 13;
-            this.button23.Text = "button23";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(24, 29);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(100, 100);
-            this.button24.TabIndex = 12;
-            this.button24.Text = "button24";
-            this.button24.UseVisualStyleBackColor = true;
+            this.Pesto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Pesto.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pesto.ForeColor = System.Drawing.Color.Black;
+            this.Pesto.Image = ((System.Drawing.Image)(resources.GetObject("Pesto.Image")));
+            this.Pesto.Location = new System.Drawing.Point(15, 17);
+            this.Pesto.Name = "Pesto";
+            this.Pesto.Size = new System.Drawing.Size(118, 134);
+            this.Pesto.TabIndex = 12;
+            this.Pesto.Text = "Pesto";
+            this.Pesto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Pesto.UseVisualStyleBackColor = true;
+            this.Pesto.UseWaitCursor = true;
+            this.Pesto.Click += new System.EventHandler(this.Pesto_Click);
             // 
             // panel3
             // 
@@ -496,6 +487,14 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(501, 211);
             this.panel5.TabIndex = 1;
+            // 
+            // cboPayment
+            // 
+            this.cboPayment.FormattingEnabled = true;
+            this.cboPayment.Location = new System.Drawing.Point(265, 19);
+            this.cboPayment.Name = "cboPayment";
+            this.cboPayment.Size = new System.Drawing.Size(217, 24);
+            this.cboPayment.TabIndex = 16;
             // 
             // lblCash
             // 
@@ -699,13 +698,33 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // cboPayment
+            // Water
             // 
-            this.cboPayment.FormattingEnabled = true;
-            this.cboPayment.Location = new System.Drawing.Point(265, 19);
-            this.cboPayment.Name = "cboPayment";
-            this.cboPayment.Size = new System.Drawing.Size(217, 24);
-            this.cboPayment.TabIndex = 16;
+            this.Water.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Water.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Water.Image = ((System.Drawing.Image)(resources.GetObject("Water.Image")));
+            this.Water.Location = new System.Drawing.Point(387, 311);
+            this.Water.Name = "Water";
+            this.Water.Size = new System.Drawing.Size(118, 134);
+            this.Water.TabIndex = 26;
+            this.Water.Text = "Water";
+            this.Water.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Water.UseVisualStyleBackColor = true;
+            this.Water.Click += new System.EventHandler(this.Water_Click);
+            // 
+            // ShrimpPizza
+            // 
+            this.ShrimpPizza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ShrimpPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShrimpPizza.Image = ((System.Drawing.Image)(resources.GetObject("ShrimpPizza.Image")));
+            this.ShrimpPizza.Location = new System.Drawing.Point(387, 165);
+            this.ShrimpPizza.Name = "ShrimpPizza";
+            this.ShrimpPizza.Size = new System.Drawing.Size(118, 134);
+            this.ShrimpPizza.TabIndex = 27;
+            this.ShrimpPizza.Text = "Shrimp Pizza";
+            this.ShrimpPizza.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ShrimpPizza.UseVisualStyleBackColor = true;
+            this.ShrimpPizza.Click += new System.EventHandler(this.ShrimpPizza_Click);
             // 
             // Form1
             // 
@@ -755,22 +774,16 @@
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button IcedTea;
+        private System.Windows.Forms.Button Sprite;
+        private System.Windows.Forms.Button Spinach;
+        private System.Windows.Forms.Button Pepperoni;
+        private System.Windows.Forms.Button ClassicPizza;
+        private System.Windows.Forms.Button Carbonara;
+        private System.Windows.Forms.Button Spaghetti;
+        private System.Windows.Forms.Button Pesto;
+        private System.Windows.Forms.Button Coke;
+        private System.Windows.Forms.Button Lasagna;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label SubTotal;
         private System.Windows.Forms.Label Tax;
@@ -792,6 +805,8 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.ComboBox cboPayment;
+        private System.Windows.Forms.Button ShrimpPizza;
+        private System.Windows.Forms.Button Water;
     }
 }
 
