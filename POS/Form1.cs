@@ -37,10 +37,10 @@ namespace POS
             tax = 3.9;
             if (dataGridView1.Rows.Count > 0)
             {
-                lblTax.Text = String.Format("₱", (((Cost_of_Items() * tax) / 100)));
-                lblSubTotal.Text = String.Format("₱", (Cost_of_Items()));
+                lblTax.Text = String.Format("\u20B1{0}", (((Cost_of_Items() * tax) / 100)));
+                lblSubTotal.Text = String.Format("\u20B1{0}", (Cost_of_Items()));
                 q = ((Cost_of_Items() * tax) / 100);
-                lblTotal.Text = String.Format("₱", (Cost_of_Items() + q));
+                lblTotal.Text = String.Format("\u20B1{0}", (Cost_of_Items() + q));
                 lblBarCode.Text = Convert.ToString(q + Cost_of_Items());
             }
 
@@ -54,7 +54,7 @@ namespace POS
             {
                 q = ((Cost_of_Items() * tax) / 100) + Cost_of_Items();
                 c = Convert.ToInt32(lblCash.Text);
-                lblChange.Text = String.Format("₱", c - q);
+                lblChange.Text = String.Format("\u20B1{0}", c - q);
             }
         }  
 
