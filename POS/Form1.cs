@@ -34,7 +34,7 @@ namespace POS
         private void AddCost()
         {
             Double tax, q;
-            tax = 3.9;
+            tax = 3;
             if (dataGridView1.Rows.Count > 0)
             {
                 lblTax.Text = String.Format("\u20B1{0}", (((Cost_of_Items() * tax) / 100)));
@@ -418,6 +418,11 @@ namespace POS
             }
             dataGridView1.Rows.Add("Water", "1", CostofItem);
             AddCost();
+        }
+
+        private void lblCash_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

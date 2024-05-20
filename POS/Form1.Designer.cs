@@ -43,6 +43,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ShrimpPizza = new System.Windows.Forms.Button();
+            this.Water = new System.Windows.Forms.Button();
             this.Coke = new System.Windows.Forms.Button();
             this.Lasagna = new System.Windows.Forms.Button();
             this.IcedTea = new System.Windows.Forms.Button();
@@ -80,8 +82,6 @@
             this.lblBarCode = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.Water = new System.Windows.Forms.Button();
-            this.ShrimpPizza = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -263,6 +263,34 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(531, 478);
             this.panel2.TabIndex = 1;
+            // 
+            // ShrimpPizza
+            // 
+            this.ShrimpPizza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ShrimpPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShrimpPizza.Image = ((System.Drawing.Image)(resources.GetObject("ShrimpPizza.Image")));
+            this.ShrimpPizza.Location = new System.Drawing.Point(387, 165);
+            this.ShrimpPizza.Name = "ShrimpPizza";
+            this.ShrimpPizza.Size = new System.Drawing.Size(118, 134);
+            this.ShrimpPizza.TabIndex = 27;
+            this.ShrimpPizza.Text = "Shrimp Pizza";
+            this.ShrimpPizza.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ShrimpPizza.UseVisualStyleBackColor = true;
+            this.ShrimpPizza.Click += new System.EventHandler(this.ShrimpPizza_Click);
+            // 
+            // Water
+            // 
+            this.Water.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Water.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Water.Image = ((System.Drawing.Image)(resources.GetObject("Water.Image")));
+            this.Water.Location = new System.Drawing.Point(387, 311);
+            this.Water.Name = "Water";
+            this.Water.Size = new System.Drawing.Size(118, 134);
+            this.Water.TabIndex = 26;
+            this.Water.Text = "Water";
+            this.Water.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Water.UseVisualStyleBackColor = true;
+            this.Water.Click += new System.EventHandler(this.Water_Click);
             // 
             // Coke
             // 
@@ -507,6 +535,7 @@
             this.lblCash.TabIndex = 15;
             this.lblCash.Text = "0";
             this.lblCash.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblCash.Click += new System.EventHandler(this.lblCash_Click);
             // 
             // lblChange
             // 
@@ -674,12 +703,11 @@
             // 
             this.lblBarCode.BackColor = System.Drawing.Color.White;
             this.lblBarCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lblBarCode.Font = new System.Drawing.Font("Free 3 of 9", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBarCode.Location = new System.Drawing.Point(405, 432);
             this.lblBarCode.Name = "lblBarCode";
             this.lblBarCode.Size = new System.Drawing.Size(400, 58);
             this.lblBarCode.TabIndex = 4;
-            this.lblBarCode.Text = "hell yeah";
             this.lblBarCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblBarCode.Click += new System.EventHandler(this.lblBarCode_Click);
             // 
@@ -698,39 +726,11 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // Water
-            // 
-            this.Water.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Water.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Water.Image = ((System.Drawing.Image)(resources.GetObject("Water.Image")));
-            this.Water.Location = new System.Drawing.Point(387, 311);
-            this.Water.Name = "Water";
-            this.Water.Size = new System.Drawing.Size(118, 134);
-            this.Water.TabIndex = 26;
-            this.Water.Text = "Water";
-            this.Water.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Water.UseVisualStyleBackColor = true;
-            this.Water.Click += new System.EventHandler(this.Water_Click);
-            // 
-            // ShrimpPizza
-            // 
-            this.ShrimpPizza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ShrimpPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShrimpPizza.Image = ((System.Drawing.Image)(resources.GetObject("ShrimpPizza.Image")));
-            this.ShrimpPizza.Location = new System.Drawing.Point(387, 165);
-            this.ShrimpPizza.Name = "ShrimpPizza";
-            this.ShrimpPizza.Size = new System.Drawing.Size(118, 134);
-            this.ShrimpPizza.TabIndex = 27;
-            this.ShrimpPizza.Text = "Shrimp Pizza";
-            this.ShrimpPizza.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ShrimpPizza.UseVisualStyleBackColor = true;
-            this.ShrimpPizza.Click += new System.EventHandler(this.ShrimpPizza_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(1368, 741);
             this.Controls.Add(this.lblBarCode);
             this.Controls.Add(this.dataGridView1);
@@ -739,7 +739,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ExpenSense ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
